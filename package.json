@@ -1,0 +1,46 @@
+{
+  "name": "rebrandly-express-demo",
+  "version": "1.0.0",
+  "description": "a demonstrative nodejs server making use of the rebrandly-express middleware",
+  "main": "src/index.js",
+  "repository": "https://github.com/rebrandly/rebrandly-express-demo",
+  "author": "Rebrandly Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start ecosystem.config.json --no-daemon",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up",
+    "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "middleware",
+    "demo",
+    "rebrandly",
+    "aliasing"
+  ],
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "http-status": "^1.4.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "pm2": "^5.1.2",
+    "rebrandly-express": "^0.0.4",
+    "serve-favicon": "^2.5.0",
+    "validator": "^13.0.0",
+    "winston": "^3.2.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0"
+  }
+}
