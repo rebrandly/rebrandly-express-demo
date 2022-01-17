@@ -6,7 +6,7 @@ making use of [the `rebrandly-express` middleware](https://github.com/rebrandly/
 
 ## example output
 Find below evidence of content served direcly along with a 200 OK response by this app (`/`, `/home`, `/favicon.ico`, `/contact`),  
-vs extra content (not found on the server) which is served via HTTP 302 redirection to Rebrandly servers (`/rebrandly`).
+vs extra content (not found on the server) which is served via HTTP 302 redirection to Rebrandly servers (`/product-hunt` would be a branded link).
 
 ```
 21:31:44 0|app  | 2022-01-15T21:31:44: info: Listening to port 3000
@@ -14,7 +14,7 @@ vs extra content (not found on the server) which is served via HTTP 302 redirect
 21:31:50 0|app  | 2022-01-15T21:31:50: info: ::1 - GET /favicon.ico 200 - 1.896 ms
 21:31:54 0|app  | 2022-01-15T21:31:54: info: ::1 - GET /home 200 - 0.644 ms
 21:31:59 0|app  | 2022-01-15T21:31:59: info: ::1 - GET /contact 200 - 0.557 ms
-21:32:03 0|app  | 2022-01-15T21:32:03: info: ::1 - GET /rebrandly 302 - 3.956 ms
+21:32:03 0|app  | 2022-01-15T21:32:03: info: ::1 - GET /product-hunt 302 - 3.956 ms
 ```
 ___
 
